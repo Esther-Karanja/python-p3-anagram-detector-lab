@@ -4,14 +4,12 @@ class Anagram:
         self.word = word
 
     def match(self, my_list):
-        value =[item for item in my_list]
-        if len(self.word) != len(value):
-            return []
-        else:
+        for value in my_list:
             if sorted(self.word) == sorted(value):
-                if value == 1:
-                    return value
-                pass
+             return [value]
+        else:
+            return []
+        
 
         
         
